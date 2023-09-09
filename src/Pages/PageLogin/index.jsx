@@ -4,9 +4,28 @@ import usuarioCadastradoNoSistema from "../../JSONCadastrados/UsuariosCadastrado
 
 
 const Login = () => {
-    const {nomeUsuario, setNomeUsuario, senhaUsuario, setSenhaUsuario } = useContext(UsuarioContext);
-    function validaUsuario(){
-            usuarioCadastradoNoSistema.map((item)=> console.log(item.nome))
+    const { nomeUsuario, setNomeUsuario, senhaUsuario, setSenhaUsuario } = useContext(UsuarioContext);
+    function validaUsuario() {
+        const id = usuarioCadastradoNoSistema.find((usuario) =>
+            usuario.nome == nomeUsuario ? usuario.id : "not"
+        )
+        console.log(id)
+        if (id != "not") {
+            usuarioCadastradoNoSistema.map((usuario) => {
+                if (parseInt(id.id) === parseInt(usuario.id)) {
+                    if (usuario.senha != senhaUsuario) {
+                        console.log("usuario ou senha não está correto")
+                    }
+                    else if (usuario.senha == senhaUsuario && usuario.nome == nomeUsuario) {
+                        console.log("senha e usuarios corretos")
+                    }
+                }
+            }
+            )
+            if (id.nome != nomeUsuario) {
+                console.log("o nome usuario n existe")
+            }
+        }
 
     }
     return (
