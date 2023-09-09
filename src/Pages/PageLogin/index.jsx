@@ -1,9 +1,14 @@
 import { useContext } from "react";
 import { UsuarioContext } from "../../Contexts/UsuarioContext";
+import usuarioCadastradoNoSistema from "../../JSONCadastrados/UsuariosCadastrados.json"
 
 
 const Login = () => {
-    const { nomeUsuario, setNomeUsuario, senhaUsuario, setSenhaUsuario } = useContext(UsuarioContext);
+    const {nomeUsuario, setNomeUsuario, senhaUsuario, setSenhaUsuario } = useContext(UsuarioContext);
+    function validaUsuario(){
+            usuarioCadastradoNoSistema.map((item)=> console.log(item.nome))
+
+    }
     return (
         <form>
             <h2>Login</h2>
@@ -22,14 +27,17 @@ const Login = () => {
                 Senha:
             </h3>
             <input type="text" placeholder={`use: 1234`}
-             value={senhaUsuario}
-             required={true}
-             onChange={(evento) =>
-                 setSenhaUsuario(evento.target.value)
-             } />
-             <button
-             onClick={(event)=>{event.preventDefault()}}
-             >Fazer login</button>
+                value={senhaUsuario}
+                required={true}
+                onChange={(evento) =>
+                    setSenhaUsuario(evento.target.value)
+                } />
+            <button
+                onClick={(event) => {
+                    event.preventDefault()
+                    validaUsuario()
+                }}
+            >Fazer login</button>
         </form>
     );
 };
