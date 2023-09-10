@@ -1,13 +1,17 @@
-import {AiOutlineClose} from "react-icons/ai"
+/* eslint-disable react/prop-types */
+import { AiOutlineClose } from "react-icons/ai"
+import style from "./Mensagem.module.css"
+const Menasagem = (props) => {
 
-const MensagemErroSenhaOuUsuarioInvalidos =()=>{
     return (
-        <div>
+        <div className={style[props.valorMensagem]}>
             <span>
                 Úsuario ou Senha inválidos!
             </span>
-            <AiOutlineClose/>
+            <AiOutlineClose size={25} onClick={() => {
+                props.enviarMensagem();
+            }} />
         </div>
     )
 }
-export default MensagemErroSenhaOuUsuarioInvalidos
+export default Menasagem

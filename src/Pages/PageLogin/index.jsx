@@ -5,29 +5,32 @@ import { CiPizza } from "react-icons/ci"
 import { LuPizza } from "react-icons/lu"
 import style from "./login.module.css"
 import { useNavigate } from "react-router-dom";
+import Menasagem from "../../Componests/Mensagens/MensagemErroUsuario";
+import { MensagemContext } from "../../Contexts/MensagemDeErro";
 
 const Login = () => {
     const { nomeUsuario, setNomeUsuario, senhaUsuario, setSenhaUsuario } = useContext(UsuarioContext);
-const navegate = useNavigate()
+    const { mensagem, setMensagem } = useContext(MensagemContext);
+    const navegate = useNavigate()
 
 
     function validaUsuario() {
         const id = usuarioCadastradoNoSistema.find((usuario) =>
             usuario.nome == nomeUsuario ? usuario.id : "not"
         )
-       
+
         if (id != "not") {
             usuarioCadastradoNoSistema.map((usuario) => {
                 if (parseInt(id.id) === parseInt(usuario.id)) {
                     if (usuario.senha != senhaUsuario) {
-                        console.log("aaaaaaaaaaaaaaaaaaa")
+                        setMensagem('displayOn');
                     }
                     else if (usuario.senha !== senhaUsuario || usuario.nome !== nomeUsuario || id.nome !== nomeUsuario) {
-                        console.log("ssssssssss")
+                        setMensagem('displayOn');
                     }
                     else if (usuario.senha === senhaUsuario && usuario.nome === nomeUsuario) {
-                    navegate("./cardapio");
-                    } 
+                        navegate("./cardapio");
+                    }
                 }
             }
             )
@@ -41,7 +44,7 @@ const navegate = useNavigate()
             <section className={style.containerLogin}>
                 <form className={style.formulario}>
                     <h3 className={style.logoName}>
-                       <LuPizza/> <span>Pizza </span>Divina<CiPizza className={style.iconPizza} />
+                        <LuPizza /> <span>Pizza </span>Divina<CiPizza className={style.iconPizza} />
                     </h3>
                     <h2 className={style.tituloLogin}>Login</h2>
                     <h2 className={style.labelSenhaUsuario}>
@@ -68,15 +71,19 @@ const navegate = useNavigate()
                         onChange={(evento) =>
                             setSenhaUsuario(evento.target.value)
                         } />
-                        <div className={style.btnDiv}>
+                    <div className={style.btnDiv}>
 
-                    <button className={style.btn}
-                        onClick={(evento) => {
-                            evento.preventDefault();
-                            validaUsuario();
-                        }}
+                        <button className={style.btn}
+                            onClick={(evento) => {
+                                evento.preventDefault();
+                                validaUsuario();
+                            }}
                         >Entrar</button>
-                        </div>
+                    </div>
+                    <Menasagem
+                        valorMensagem={mensagem}
+                        enviarMensagem={() => setMensagem('displayNone')}
+                    />
                 </form>
             </section>
         </Fragment>

@@ -1,0 +1,17 @@
+.displayOn{
+    position: fixed;
+    top: 1%;
+    left: 30%;
+   padding: 1em;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    gap: .20em;
+    border-radius: .45em;
+}
+.displayNone{
+    display: none;
+}
+.close{
+    font-size: 2em;
+}
