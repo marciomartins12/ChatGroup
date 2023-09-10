@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "../Pages/PageLogin";
 import { UsuarioProvider } from "../Contexts/UsuarioContext";
+import Cardapio from "../Pages/Cardapio";
 function Routers() {
-
 
   return (
     <BrowserRouter>
@@ -12,8 +12,8 @@ function Routers() {
           <Login />
         </UsuarioProvider>
         } />
-        {/* <Route path="/produtos" element={}/>
-        <Route path="/produtos/carrinho" element={}/> */}
+        <Route path="/cardapio" element={<Cardapio/>}/>
+        {/* <Route path="/cardapio/carrinho" element={}/> */}
       </Routes>
     </BrowserRouter>
   )

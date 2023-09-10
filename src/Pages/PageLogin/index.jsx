@@ -4,25 +4,30 @@ import usuarioCadastradoNoSistema from "../../JSONCadastrados/UsuariosCadastrado
 import { CiPizza } from "react-icons/ci"
 import { LuPizza } from "react-icons/lu"
 import style from "./login.module.css"
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
     const { nomeUsuario, setNomeUsuario, senhaUsuario, setSenhaUsuario } = useContext(UsuarioContext);
+const navegate = useNavigate()
+
+
     function validaUsuario() {
         const id = usuarioCadastradoNoSistema.find((usuario) =>
             usuario.nome == nomeUsuario ? usuario.id : "not"
         )
-        console.log(id)
+       
         if (id != "not") {
             usuarioCadastradoNoSistema.map((usuario) => {
                 if (parseInt(id.id) === parseInt(usuario.id)) {
                     if (usuario.senha != senhaUsuario) {
                         console.log("aaaaaaaaaaaaaaaaaaa")
                     }
-                    else if (usuario.senha === senhaUsuario && usuario.nome === nomeUsuario) {
-                        console.log("aaaaaaaaaaa")
-                    } else if (usuario.senha !== senhaUsuario || usuario.nome !== nomeUsuario || id.nome !== nomeUsuario) {
+                    else if (usuario.senha !== senhaUsuario || usuario.nome !== nomeUsuario || id.nome !== nomeUsuario) {
                         console.log("ssssssssss")
                     }
+                    else if (usuario.senha === senhaUsuario && usuario.nome === nomeUsuario) {
+                    navegate("./cardapio");
+                    } 
                 }
             }
             )
@@ -66,8 +71,9 @@ const Login = () => {
                         <div className={style.btnDiv}>
 
                     <button className={style.btn}
-                        onClick={() => {
-                            validaUsuario()
+                        onClick={(evento) => {
+                            evento.preventDefault();
+                            validaUsuario();
                         }}
                         >Entrar</button>
                         </div>
