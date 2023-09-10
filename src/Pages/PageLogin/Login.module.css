@@ -1,0 +1,14 @@
+.containerLogin{
+   display: flex;
+   position: relative;
+  justify-content: center;
+  background-blend-mode: multiply;
+  background-image: url("../../assets/imgs/fundoLoginImg.png");
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.70);
+  height: 100vh;
+}
+.formulario{
+    margin-top: 1em;
+    background-color: #ffea0004;
+}

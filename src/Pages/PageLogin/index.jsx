@@ -1,8 +1,7 @@
 import { useContext } from "react";
 import { UsuarioContext } from "../../Contexts/UsuarioContext";
 import usuarioCadastradoNoSistema from "../../JSONCadastrados/UsuariosCadastrados.json"
-import MensagemErroSenhaOuUsuarioInvalidos from "../../Componests/Mensagens/MensagemErroUsuario";
-
+import style from "./login.module.css"
 
 const Login = () => {
     const { nomeUsuario, setNomeUsuario, senhaUsuario, setSenhaUsuario } = useContext(UsuarioContext);
@@ -30,8 +29,8 @@ const Login = () => {
 
     }
     return (
-        <>
-        <form>
+        <section className={style.containerLogin}>
+        <form className={style.formulario}>
             <h2>Login</h2>
             <h2>
                 Úsuario:
@@ -60,8 +59,8 @@ const Login = () => {
                 }}
             >Fazer login</button>
         </form>
-        <MensagemErroSenhaOuUsuarioInvalidos />
-        </>
+      
+        </section>
     );
 };
 export default Login;
