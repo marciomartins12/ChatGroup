@@ -1,0 +1,47 @@
+[
+    {
+        "nome": "Pizza Margherita",
+        "id": 1,
+        "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
+    },
+    {
+        "nome": "Pizza Quatro Queijos",
+        "id": 2,
+        "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
+    },
+    {
+        "nome": "Pizza Pepperoni Supreme",
+        "id": 3,
+        "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
+    },
+    {
+        "nome": "Pizza Vegetariana",
+        "id": 4,
+        "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
+    },
+    {
+        "nome": "Pizza Mexicana",
+        "id": 5,
+        "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
+    },
+    {
+        "nome": "Pizza Frango BBQ",
+        "id": 6,
+        "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
+    },
+    {
+        "nome": "Pizza Hawaiian",
+        "id": 7,
+        "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
+    },
+    {
+        "nome": "Pizza Bolonhesa",
+        "id": 8,
+        "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
+    },
+    {
+        "nome": "Combo 3 Bolonhesa",
+        "id": 9,
+        "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
+    }
+]

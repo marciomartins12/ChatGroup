@@ -2,3 +2,47 @@
     position: relative;
   
 }
+.logoName {
+    font-size: 2.25em;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: .12em;
+    padding: .2em 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: .22em;
+    margin-bottom: 1em;
+}
+.logoName span {
+    color: rgb(255, 238, 111);
+}
+.iconPizza{
+    color: yellow;
+    font-size: 1.12em;
+}
+.p2{
+    position: fixed;
+    top: 10%;
+    left: 20%;
+    transform: translate(50% 50%);
+    padding: 1em;
+    background-color: chartreuse;
+    border-radius: .45em;
+    animation: sumir 2s linear forwards;
+}
+@keyframes sumir {
+    0% {
+
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.60;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.displayNone{
+    display: none;
+}
