@@ -1,14 +1,78 @@
-.containerLogin{
-   display: flex;
-   position: relative;
-  justify-content: center;
-  background-blend-mode: multiply;
-  background-image: url("../../assets/imgs/fundoLoginImg.png");
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.70);
-  height: 100vh;
+.logoName {
+    font-size: 2.25em;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: .12em;
+    padding: .2em 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: .22em;
+    margin-bottom: 1em;
 }
-.formulario{
+
+.logoName span {
+    color: rgb(255, 238, 111);
+}
+.iconPizza{
+    color: yellow;
+    font-size: 1.12em;
+}
+.containerLogin {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-blend-mode: multiply;
+    background-image: url("../../assets/imgs/fundoLoginImg.png");
+    background-position: center;
+    height: 99vh;
+    background-color: rgba(0, 0, 0, 0.70);
+
+}
+
+.formulario {
+    width: 100%;
     margin-top: 1em;
-    background-color: #ffea0004;
 }
+
+.tituloLogin {
+    font-size: 2em;
+    margin-bottom: .45em;
+    text-align: center;
+}
+
+.labelSenhaUsuario {
+    margin-bottom: .45em;
+    font-size: 1.75em;
+    margin-left: 5%;
+}
+
+.inputs {
+    text-align: center;
+    margin-left: 5%;
+    width: 80%;
+    border-radius: .90em;
+    padding: .45em;
+    margin-bottom: .25em;
+
+}
+
+.inputs::placeholder {
+    font-size: 1.2em;
+}
+.btnDiv{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 50%;
+    border: none;
+    border-radius: .65em;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 1em;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(242, 252, 165);
+}
+
