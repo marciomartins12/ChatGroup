@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { UsuarioContext } from "../../Contexts/UsuarioContext";
 import usuarioCadastradoNoSistema from "../../JSONCadastrados/UsuariosCadastrados.json"
+import MensagemErroSenhaOuUsuarioInvalidos from "../../Componests/Mensagens/MensagemErroUsuario";
 
 
 const Login = () => {
@@ -14,21 +15,22 @@ const Login = () => {
             usuarioCadastradoNoSistema.map((usuario) => {
                 if (parseInt(id.id) === parseInt(usuario.id)) {
                     if (usuario.senha != senhaUsuario) {
-                        console.log("usuario ou senha não está correto")
+                        console.log("aaaaaaaaaaaaaaaaaaa")
                     }
-                    else if (usuario.senha == senhaUsuario && usuario.nome == nomeUsuario) {
-                        console.log("senha e usuarios corretos")
+                    else if (usuario.senha === senhaUsuario && usuario.nome === nomeUsuario ) {
+                        console.log("aaaaaaaaaaa")
+                    }else if (usuario.senha !== senhaUsuario || usuario.nome !== nomeUsuario || id.nome !== nomeUsuario) {
+                    console.log("ssssssssss")
                     }
                 }
             }
             )
-            if (id.nome != nomeUsuario) {
-                console.log("o nome usuario n existe")
-            }
+           
         }
 
     }
     return (
+        <>
         <form>
             <h2>Login</h2>
             <h2>
@@ -58,6 +60,8 @@ const Login = () => {
                 }}
             >Fazer login</button>
         </form>
+        <MensagemErroSenhaOuUsuarioInvalidos />
+        </>
     );
 };
 export default Login;
