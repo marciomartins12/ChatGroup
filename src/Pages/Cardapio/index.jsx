@@ -1,7 +1,8 @@
+import style from "./Cardapio.module.css"
 const Cardapio = ()=>{
     return (
-        <section>
-aaaaaaaaaaaaaaaa
+        <section className={style.section}>
+                aaaaaaaaaa
         </section>
     )
 }
