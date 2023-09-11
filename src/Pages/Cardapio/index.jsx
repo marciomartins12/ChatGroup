@@ -1,5 +1,4 @@
 import style from "./Cardapio.module.css";
-
 import listaCardapio from "./Cardapio.json";
 import ItemCardapio from "../../Componests/ItensCardapio";
 
@@ -14,7 +13,7 @@ const Cardapio = () => {
                     key={item.id}
                     id={item.id}
                     nome={item.nome}
-                    descricao={item.descricao}
+                    preco = {item.preco}
                     />
                     
                 })
