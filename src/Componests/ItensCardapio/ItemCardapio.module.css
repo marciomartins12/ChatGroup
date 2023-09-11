@@ -6,3 +6,30 @@
     width: auto;
     height: 150px;
 }
+.link{
+    text-decoration: none;
+    color: inherit;
+}
+.section h2{
+    font-size: 1.5em;
+    margin-bottom: 0.15em;
+}
+.section h3{
+    color: black;
+    padding: .22em 0;
+    background-color: yellow;
+    border-radius: .22em;
+    display: inline-block;
+}
+.container{
+    width: 100%;
+}
+.containerDiv{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 90%;
+}
+.icon{
+    font-size: 2em;
+}

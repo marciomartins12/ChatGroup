@@ -59,7 +59,7 @@ const Login = () => {
                     <h3 className={style.labelSenhaUsuario}>
                         Senha:
                     </h3>
-                    <input type="text"
+                    <input type="password"
                         className={style.inputs}
                         placeholder={`use: 1234`}
                         value={senhaUsuario}
