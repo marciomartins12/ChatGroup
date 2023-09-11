@@ -1,8 +1,6 @@
 import { Fragment, useContext } from "react";
 import { UsuarioContext } from "../../Contexts/UsuarioContext";
 import usuarioCadastradoNoSistema from "../../JSONCadastrados/UsuariosCadastrados.json"
-import { CiPizza } from "react-icons/ci"
-import { LuPizza } from "react-icons/lu"
 import style from "./login.module.css"
 import { useNavigate } from "react-router-dom";
 import Menasagem from "../../Componests/Mensagens/MensagemErroUsuario";
@@ -43,9 +41,7 @@ const Login = () => {
 
             <section className={style.containerLogin}>
                 <form className={style.formulario}>
-                    <h3 className={style.logoName}>
-                        <LuPizza /> <span>Pizza </span>Divina<CiPizza className={style.iconPizza} />
-                    </h3>
+                  
                     <h2 className={style.tituloLogin}>Login</h2>
                     <h2 className={style.labelSenhaUsuario}>
                         Úsuario:
