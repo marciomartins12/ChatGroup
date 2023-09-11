@@ -7,16 +7,19 @@ const Cardapio = () => {
     return (
         <section className={style.section}>
             <p className={style.p2}>Fique a vontade para escolher!</p>
+            <ul>
             {
                 listaCardapio.map((item)=>{
                     return <ItemCardapio
                     key={item.id}
+                    id={item.id}
                     nome={item.nome}
                     descricao={item.descricao}
                     />
-
+                    
                 })
             }
+            </ul>
         </section>
     )
 }

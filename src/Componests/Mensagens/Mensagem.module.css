@@ -8,10 +8,23 @@
     align-items: center;
     gap: .20em;
     border-radius: .45em;
+    z-index: 9999;
+    animation: sumindo 1s normal;
 }
 .displayNone{
     display: none;
 }
 .close{
     font-size: 2em;
+}
+@keyframes sumindo {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
 }

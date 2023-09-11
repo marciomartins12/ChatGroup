@@ -3,7 +3,7 @@ import { UsuarioContext } from "../../Contexts/UsuarioContext";
 import usuarioCadastradoNoSistema from "../../JSONCadastrados/UsuariosCadastrados.json"
 import style from "./login.module.css"
 import { useNavigate } from "react-router-dom";
-import Menasagem from "../../Componests/Mensagens/MensagemErroUsuario";
+import Menasagem from "../../Componests/Mensagens/MensagemErroUsuario.jsx";
 import { MensagemContext } from "../../Contexts/MensagemDeErro";
 
 const Login = () => {

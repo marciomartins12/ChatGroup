@@ -20,8 +20,8 @@
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
     },
     {
-        "nome": "Pizza Mexicana",
-        "id": 5,
+        "nome": "Pizza Mexicana",   
+        "id": "5",
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos."
     },
     {
