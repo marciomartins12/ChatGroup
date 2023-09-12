@@ -19,9 +19,9 @@ const CarrinhoDeCompras = () => {
             com duas metades e isso tudo tem que ficar salvo la no carrinho. trabalho para fazer amanha
             enviar item para o carrinho*/}
             <select>
-                <option name="refri" id="">pizza</option>
-                <option name="refri" id="">pizza q</option>
-                <option name="refri" id="">aaaaaaaaa1</option>
+                <option name="pizza" id="">pizza</option>
+                <option name="pizza" id="">pizza q</option>
+                <option name="pizza" id="">aaaaaaaaa1</option>
             </select>
             </div>
         </section>
