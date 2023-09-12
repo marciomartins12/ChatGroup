@@ -3,13 +3,19 @@ import listaCardapio from "./Cardapio.json";
 import ItemCardapio from "../../Componests/ItensCardapio";
 import {TbShoppingBag} from "react-icons/tb"
 import { CarrinhoProvider } from "../../Contexts/CarrinhodeCompraContext";
+import img from "../../assets/imgs/carregando.png"
 
 const Cardapio = () => {
     return (
         <section className={style.section}>
+            
+            <div className={style.img}>
+                <img src={img} alt="comendo"/>
+            </div>
+            
+            <div className={style.div}>
             <TbShoppingBag className={style.iconcarrinho}/>
-
-            <p className={style.p2}>Fique a vontade para escolher!</p>
+         
 
             <CarrinhoProvider>
             <ul>
@@ -27,6 +33,7 @@ const Cardapio = () => {
             </ul>
             </CarrinhoProvider>
 
+            </div>
         </section>
     )
 }

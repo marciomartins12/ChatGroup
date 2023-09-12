@@ -1,25 +1,36 @@
 .section{
    display: flex;
    align-items: center;
+   position: relative;
+    border-bottom: 1px dotted white;
 }
 .section img{
     width: auto;
     height: 150px;
 }
+
 .link{
+    display: flex;
     text-decoration: none;
     color: inherit;
+    align-items: center;
+    position:relative;
+    top: 1em;
+    left: 20%;
 }
 .section h2{
     font-size: 1.5em;
     margin-bottom: 0.15em;
 }
 .section h3{
+    margin-top: .25em;
+    margin-bottom: .20em;
     color: black;
-    padding: .22em 0;
+    padding: .22em;
     background-color: yellow;
     border-radius: .22em;
     display: inline-block;
+    font-weight: 700;
 }
 .container{
     width: 100%;

@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import style from "./ItemCardapio.module.css";
 import { useContext } from "react";
 import { Carrinho } from "../../Contexts/CarrinhodeCompraContext";
-import { MdAddShoppingCart } from "react-icons/md"
+import { MdAddShoppingCart } from "react-icons/md";
+import {PiCookieDuotone} from "react-icons/pi";
+import {PiCookingPotBold} from "react-icons/pi"
 
 const ItemCardapio = ({ nome, id, descricao, preco }) => {
     const carrinho = useContext(Carrinho);
@@ -18,7 +20,7 @@ const ItemCardapio = ({ nome, id, descricao, preco }) => {
                         <h2>{nome}</h2>
                         <h3>Preço R${preco}</h3>
                         <p>
-                            <Link className={style.link} to="/informacoes">ingredientes</Link>  
+                            <Link className={style.link} to="/informacoes"><PiCookingPotBold/>ingredientes<PiCookieDuotone/></Link>  
                         </p>
 
                     </div>
