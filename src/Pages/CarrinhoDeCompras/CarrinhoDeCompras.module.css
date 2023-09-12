@@ -6,3 +6,10 @@
     background-image: url("../../assets/imgs/fundoLoginImg.png");
     height: 100vh;
 }
+.item{
+    display: flex;
+    align-items: center;
+}
+.img{
+    height: 150px;
+}
