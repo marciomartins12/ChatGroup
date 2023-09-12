@@ -3,6 +3,7 @@
     background-blend-mode: multiply;
     background-image: url("/src/assets/imgs/fundoLoginImg.png");
     background-color: rgba(0, 0, 0, 0.76);
+    padding-top: 1.75em;
 }
 
 .div {
@@ -23,6 +24,7 @@
     position: fixed;
     top: 25%;
     left: 30%;
+    animation: img 2s forwards;
 }
 
 .p2 {
@@ -35,7 +37,11 @@
     border-radius: .45em;
     animation: sumir 2s linear forwards;
 }
-
+@keyframes img {
+    100%{
+       top: 100%;
+    }
+}
 @keyframes sumir {
     0% {
 
@@ -47,6 +53,8 @@
     }
 
     100% {
+      
+        top: 100%;
         opacity: 0;
         display: none;
     }
@@ -57,9 +65,13 @@
 }
 
 .iconcarrinho {
+    text-decoration: none;
+    color: white;
     position: fixed;
-    font-size: 2em;
+    font-size: 2.2em;
     top: 1%;
     right: 3%;
     z-index: 9999;
+    background-color: black;
+    border-radius: .45em;
 }

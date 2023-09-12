@@ -1,56 +1,65 @@
 [
     {
-        "nome": "Pizza Margherita",
+        "nome": "Margherita",
+        "tamanho": "8F",
         "id": 1,
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos.",
-        "preco": 80
+        "preco": 40
     },
     {
-        "nome": "Pizza Quatro Queijos",
+        "nome": "Quatro Queijos",
+        "tamanho": "8F",
         "id": 2,
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos.",
-        "preco": 80
+        "preco": 40
     },
     {
-        "nome": "Pizza Pepperoni Supreme",
+        "nome": "Pepperoni",
+        "tamanho": "Média",
         "id": 3,
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos.",
         "preco": 80
     },
     {
-        "nome": "Pizza Vegetariana",
+        "nome": "Vegetariana",
+        "tamanho": "Média",
         "id": 4,
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos.",
         "preco": 80
     },
     {
-        "nome": "Pizza Mexicana",
+        "nome": "Mexicana",
+        "tamanho": "Grande",
         "id": 5,
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos.",
-        "preco": 80
+        "preco": 140
     },
     {
-        "nome": "Pizza Frango BBQ",
+        "nome": "Frango BBQ",
+        "tamanho": "Grande",
         "id": 6,
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos.",
-        "preco": 80
+        "preco": 140
     },
     {
-        "nome": "Pizza Hawaiian",
+        "nome": "Combo ",
+        "tamanho": "Grande",
         "id": 7,
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos.",
-        "preco": 80
+        "preco": 140
     },
     {
-        "nome": "Pizza Bolonhesa",
+        "nome": "Bolonhesa",
+        "tamanho": "Grande",
         "id": 8,
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos.",
-        "preco": 80
+        "preco": 140
     },
     {
-        "nome": "Combo 3 Bolonhesa",
+        "nome": "Hawaiian",
+        "tamanho": "Grande",
         "id": 9,
         "descricao": "Uma obra-prima gastronômica onde a massa é cuidadosamente preparada e assada até a perfeição, resultando em uma crosta dourada e crocante. Esta pizza é generosamente coberta com ingredientes frescos e de alta qualidade, harmonizando sabores que satisfazem os sentidos.",
-        "preco": 80
+        "preco": 140
     }
 ]
