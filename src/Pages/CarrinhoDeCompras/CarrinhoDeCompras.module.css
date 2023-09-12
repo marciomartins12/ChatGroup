@@ -2,7 +2,7 @@
 .section{
     padding-top: 3em;
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.227);
+    background-color: rgba(0, 0, 0, 0.095);
     background-image: url("../../assets/imgs/fundoLoginImg.png");
     height: 100vh;
 }
