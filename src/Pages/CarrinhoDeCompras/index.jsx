@@ -4,6 +4,8 @@ import img from "../../../public/imagem/1.png";
 const CarrinhoDeCompras = () => {
     return (
         <section className={style.section}>
+            {/*botao de voltar  */}
+            
             <div className={style.item}>
 
             <img src={img} className={style.img} alt="nome" />
