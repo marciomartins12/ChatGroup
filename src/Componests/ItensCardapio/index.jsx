@@ -5,11 +5,19 @@ import { useContext } from "react";
 import { Carrinho } from "../../Contexts/CarrinhodeCompraContext";
 import { GiShoppingCart } from "react-icons/gi";
 import { PiCookieDuotone,  PiCookingPotBold  } from "react-icons/pi";
+import Cardapio from "../../Pages/Cardapio/Cardapio.json";
 
-
-const ItemCardapio = ({ nome, id, descricao, preco, tamanho }) => {
+const ItemCardapio = ({ nome, id, descricao, preco, tamanho, adicionado }) => {
     const carrinho = useContext(Carrinho);
-    console.log(carrinho, descricao)
+    console.log(descricao)
+    const modificarjson = (item)=>{
+    Cardapio.map((pizza)=>{
+        console.log(pizza)
+        pizza == item? {...pizza, adicionado: true}: console.log("não deu")
+    })
+
+    }
+
     return (
         <li className={style.item}>
             {carrinho.carrinhovalor.length > 0 ? console.log("tem algo") : console.log("não tem nada")}
@@ -26,10 +34,15 @@ const ItemCardapio = ({ nome, id, descricao, preco, tamanho }) => {
                     </p>
             </div>
             <div className={style.divIcons}>
-                <h5>Adicionar</h5>
-                <button>
+                {
+                (adicionado != true)?  <>
+                    <h5>Adicionar</h5>
+                <button onClick={()=> modificarjson(nome)}>
             <GiShoppingCart/>
-                </button>
+                </button> 
+                </>
+                : console.log("aaaaaaaaaaaaaaa")
+                }
             </div>
         </li>
     );
