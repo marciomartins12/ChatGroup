@@ -5,7 +5,7 @@ const CarrinhoDeCompras = () => {
     return (
         <section className={style.section}>
             {/*botao de voltar  */}
-            
+
             <div className={style.item}>
 
             <img src={img} className={style.img} alt="nome" />
@@ -25,7 +25,7 @@ const CarrinhoDeCompras = () => {
                 <option name="pizza" id="">pizza q</option>
                 <option name="pizza" id="">aaaaaaaaa1</option>
             </select>
-            </div>
+            </div>  
         </section>
 
 
