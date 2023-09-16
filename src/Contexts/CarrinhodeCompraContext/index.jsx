@@ -1,8 +1,9 @@
-/* eslint-disable react/prop-types */
 import { createContext, useState } from "react";
+import PropTypes from "prop-types";
 
-export const Carrinho = createContext();
-Carrinho.displayName = "carrinho de compras";
+export const CarrinhoContext = createContext();
+CarrinhoContext.displayName = "carrinho de compras";
+
 
 export const CarrinhoProvider = ({ children }) => {
     const [itemSelecionado, setItemselecionado] = useState([
@@ -41,13 +42,14 @@ export const CarrinhoProvider = ({ children }) => {
         {
             id: 9,
             selecionado: false
-        },
+        }
     ])
-    const [carrinhovalor, setCarrinho] = useState([]);
-
     return (
-        <Carrinho.Provider value={{ carrinhovalor, setCarrinho, itemSelecionado, setItemselecionado }}>
+        <CarrinhoContext.Provider value={{ itemSelecionado, setItemselecionado }}>
             {children}
-        </Carrinho.Provider>
+        </CarrinhoContext.Provider>
     )
 }
+CarrinhoProvider.propTypes = {
+    children: PropTypes.node.isRequired,
+};

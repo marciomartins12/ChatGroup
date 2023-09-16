@@ -1,24 +1,37 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import style from "./ItemCardapio.module.css";
-import { useContext } from "react";
-import { Carrinho } from "../../Contexts/CarrinhodeCompraContext";
 import { GiShoppingCart } from "react-icons/gi";
 import { PiCookieDuotone,  PiCookingPotBold  } from "react-icons/pi";
-import Cardapio from "../../Pages/Cardapio/Cardapio.json";
 
-const ItemCardapio = ({ nome, id, descricao, preco, tamanho, adicionado }) => {
-    const carrinho = useContext(Carrinho);
-    const adicionarIDDoItemNoCarrinho = (item)=>{
-    Cardapio.map((pizza)=>{
-        console.log(pizza)
-    })
+import {CarrinhoContext} from "../../Contexts/CarrinhodeCompraContext"
+import { useContext } from "react";
+const ItemCardapio = ({ nome, id, preco, tamanho, adicionado }) => {
 
-    }
+    const {itemSelecionado, setItemselecionado} = useContext(CarrinhoContext)
+
+    const adicionarIDDoItemNoCarrinho = (itemId) => {
+        // Crie uma cópia do array de itens selecionados
+        const updatedItems = itemSelecionado.map((item) => {
+          if (item.id === itemId) {
+            // Inverta o valor 'selecionado' do item correspondente
+            return {
+              ...item,
+              selecionado: !item.selecionado,
+            };
+          }
+          return item;
+        });
+    
+        // Atualize o contexto com o novo array
+        setItemselecionado(updatedItems);
+        console.log(itemSelecionado)
+      };
+    
 
     return (
         <li className={style.item}>
-            {carrinho.carrinhovalor.length > 0 ? console.log("tem algo") : console.log("não tem nada")}
+            {itemSelecionado.length > 0 ? console.log("tem algo") : console.log("não tem nada")}
             <img src={`./imagem/${id}.png`} alt={nome} />
             <div className={style.container}>
                 <div>
@@ -35,7 +48,7 @@ const ItemCardapio = ({ nome, id, descricao, preco, tamanho, adicionado }) => {
                 {
                 (adicionado != true)?  <>
                     <h5>Adicionar</h5>
-                <button onClick={()=> adicionarIDDoItemNoCarrinho(nome)}>
+                <button onClick={()=> adicionarIDDoItemNoCarrinho(id)}>
             <GiShoppingCart/>
                 </button> 
                 </>

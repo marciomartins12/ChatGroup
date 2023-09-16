@@ -6,7 +6,7 @@ MensagemContext.displayName="mensagem de erro de login"
 
 
 export const MensagemProvider = ({children})=>{
-    const [ mensagem, setMensagem] = useState("displayNone")
+    const [mensagem, setMensagem] = useState("displayNone")
 return (
     <MensagemContext.Provider value={{ mensagem, setMensagem}}>
         {children}

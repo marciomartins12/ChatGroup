@@ -1,6 +1,5 @@
 [
     {
-        "adicionado": false,
         "nome": "Margherita",
         "tamanho": "8F",
         "id": 1,
@@ -9,7 +8,6 @@
         "metade": "imgmetade"
     },
     {
-        "adicionado": false,
         "nome": "Quatro Queijos",
         "tamanho": "8F",
         "id": 2,
@@ -18,7 +16,6 @@
         "metade": "imgmetade"
     },
     {
-        "adicionado": false,
         "nome": "Pepperoni",
         "tamanho": "Média",
         "id": 3,
@@ -27,7 +24,6 @@
         "metade": "imgmetade"
     },
     {
-        "adicionado": false,
         "nome": "Vegetariana",
         "tamanho": "Média",
         "id": 4,
@@ -36,7 +32,6 @@
         "metade": "imgmetade"
     },
     {
-        "adicionado": false,
         "nome": "Mexicana",
         "tamanho": "Grande",
         "id": 5,
@@ -45,7 +40,6 @@
         "metade": "imgmetade"
     },
     {
-        "adicionado": false,
         "nome": "Frango BBQ",
         "tamanho": "Grande",
         "id": 6,
@@ -54,7 +48,6 @@
         "metade": "imgmetade"
     },
     {
-        "adicionado": false,
         "nome": "Combo ",
         "tamanho": "Grande",
         "id": 7,
@@ -63,7 +56,6 @@
         "metade": "imgmetade"
     },
     {
-        "adicionado": false,
         "nome": "Bolonhesa",
         "tamanho": "Grande",
         "id": 8,
@@ -72,7 +64,6 @@
         "metade": "imgmetade"
     },
     {
-        "adicionado": false,
         "nome": "Hawaiian",
         "tamanho": "Grande",
         "id": 9,
