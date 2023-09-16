@@ -2,32 +2,32 @@
 import { Link } from "react-router-dom";
 import style from "./ItemCardapio.module.css";
 import { GiShoppingCart } from "react-icons/gi";
-import { PiCookieDuotone,  PiCookingPotBold  } from "react-icons/pi";
+import { PiCookieDuotone, PiCookingPotBold } from "react-icons/pi";
+import { MdOutlineDoneOutline } from "react-icons/md";
 
-import {CarrinhoContext} from "../../Contexts/CarrinhodeCompraContext"
+import { CarrinhoContext } from "../../Contexts/CarrinhodeCompraContext"
 import { useContext } from "react";
-const ItemCardapio = ({ nome, id, preco, tamanho, adicionado }) => {
-
-    const {itemSelecionado, setItemselecionado} = useContext(CarrinhoContext)
+const ItemCardapio = ({ nome, id, preco, tamanho }) => {
+    
+    const { itemSelecionado, setItemselecionado } = useContext(CarrinhoContext)
 
     const adicionarIDDoItemNoCarrinho = (itemId) => {
-        // Crie uma cópia do array de itens selecionados
+
         const updatedItems = itemSelecionado.map((item) => {
-          if (item.id === itemId) {
-            // Inverta o valor 'selecionado' do item correspondente
-            return {
-              ...item,
-              selecionado: !item.selecionado,
-            };
-          }
-          return item;
+            if (item.id === itemId) {
+
+                return {
+                    ...item,
+                    selecionado: !item.selecionado,
+                };
+            }
+            return item;
         });
-    
-        // Atualize o contexto com o novo array
+
         setItemselecionado(updatedItems);
         console.log(itemSelecionado)
-      };
-    
+    };
+
 
     return (
         <li className={style.item}>
@@ -40,20 +40,38 @@ const ItemCardapio = ({ nome, id, preco, tamanho, adicionado }) => {
                     <h3 className={style.preco}>R${preco}</h3>
 
                 </div>
-                    <p className={style.ingredientes}>
-                        <Link className={style.link} to="/informacoes"><PiCookingPotBold/>ingredientes<PiCookieDuotone /></Link>
-                    </p>
+                <p className={style.ingredientes}>
+                    <Link className={style.link} to="/informacoes"><PiCookingPotBold />ingredientes<PiCookieDuotone /></Link>
+                </p>
             </div>
             <div className={style.divIcons}>
-                {
-                (adicionado != true)?  <>
-                    <h5>Adicionar</h5>
-                <button onClick={()=> adicionarIDDoItemNoCarrinho(id)}>
-            <GiShoppingCart/>
-                </button> 
-                </>
-                : console.log("aaaaaaaaaaaaaaa")
-                }
+               
+            {
+  itemSelecionado.map((itemMap) => {
+    if (itemMap.id === id) {
+      return itemMap.selecionado ? (
+        <>
+      
+        <MdOutlineDoneOutline key={itemMap.id} />
+        <h5>no carrinho</h5>
+        </>
+      ) : (
+        <>
+          <h5>Adicionar</h5>
+          <button onClick={() => adicionarIDDoItemNoCarrinho(id)}>
+            <GiShoppingCart />
+          </button>
+        </>
+      );
+    }
+    return null; // Certifique-se de retornar null para evitar erros de renderização
+  })
+}
+
+
+
+
+
             </div>
         </li>
     );
