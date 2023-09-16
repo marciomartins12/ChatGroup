@@ -50,9 +50,25 @@
     border-radius: .45em;
 }
 
-.divIcons button {
+.divIcons button  {
     font-size: 2.25em;
     color: inherit;
     background: none;
     border: none;
+}
+.icone{
+    font-size: 1.5em;
+    color: yellow;
+}
+.h{
+    width: 100%;
+    font-weight: 700 ;
+    text-align: center;
+}
+.aviso{
+    position: fixed;
+    right: 2%;
+    top: 0.25%;
+    z-index: 999999999999999;
+    color: green;
 }

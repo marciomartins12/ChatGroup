@@ -4,7 +4,7 @@ import style from "./ItemCardapio.module.css";
 import { GiShoppingCart } from "react-icons/gi";
 import { PiCookieDuotone, PiCookingPotBold } from "react-icons/pi";
 import { MdOutlineDoneOutline } from "react-icons/md";
-
+import { AiTwotonePlusCircle } from "react-icons/ai";
 import { CarrinhoContext } from "../../Contexts/CarrinhodeCompraContext"
 import { useContext } from "react";
 const ItemCardapio = ({ nome, id, preco, tamanho }) => {
@@ -31,7 +31,6 @@ const ItemCardapio = ({ nome, id, preco, tamanho }) => {
 
     return (
         <li className={style.item}>
-            {itemSelecionado.length > 0 ? console.log("tem algo") : console.log("não tem nada")}
             <img src={`./imagem/${id}.png`} alt={nome} />
             <div className={style.container}>
                 <div>
@@ -51,20 +50,20 @@ const ItemCardapio = ({ nome, id, preco, tamanho }) => {
     if (itemMap.id === id) {
       return itemMap.selecionado ? (
         <>
-      
-        <MdOutlineDoneOutline key={itemMap.id} />
-        <h5>no carrinho</h5>
+        <MdOutlineDoneOutline className={style.icone} key={itemMap.id} />
+        <AiTwotonePlusCircle className={style.aviso}/>
+        <h5 className={style.h}>no carrinho</h5>
         </>
       ) : (
         <>
-          <h5>Adicionar</h5>
+          <h5 className={style.h}>Adicionar</h5>
           <button onClick={() => adicionarIDDoItemNoCarrinho(id)}>
             <GiShoppingCart />
           </button>
         </>
       );
     }
-    return null; // Certifique-se de retornar null para evitar erros de renderização
+    return null; 
   })
 }
 
