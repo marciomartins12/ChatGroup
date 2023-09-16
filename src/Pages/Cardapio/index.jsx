@@ -1,5 +1,5 @@
 import style from "./Cardapio.module.css";
-import listaCardapio from "./Cardapio.json";
+import listaCardapio from "./Cardapio";
 import ItemCardapio from "../../Componests/ItensCardapio";
 import { TbShoppingBag } from "react-icons/tb"
 import { CarrinhoProvider } from "../../Contexts/CarrinhodeCompraContext";
@@ -23,6 +23,7 @@ const Cardapio = () => {
                             listaCardapio.map((item) => {
                                 return <ItemCardapio
                                     key={item.id}
+                            
                                     id={item.id}
                                     nome={item.nome}
                                     tamanho={item.tamanho}

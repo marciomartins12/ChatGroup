@@ -9,11 +9,9 @@ import Cardapio from "../../Pages/Cardapio/Cardapio.json";
 
 const ItemCardapio = ({ nome, id, descricao, preco, tamanho, adicionado }) => {
     const carrinho = useContext(Carrinho);
-    console.log(descricao)
-    const modificarjson = (item)=>{
+    const adicionarIDDoItemNoCarrinho = (item)=>{
     Cardapio.map((pizza)=>{
         console.log(pizza)
-        pizza == item? {...pizza, adicionado: true}: console.log("não deu")
     })
 
     }
@@ -37,7 +35,7 @@ const ItemCardapio = ({ nome, id, descricao, preco, tamanho, adicionado }) => {
                 {
                 (adicionado != true)?  <>
                     <h5>Adicionar</h5>
-                <button onClick={()=> modificarjson(nome)}>
+                <button onClick={()=> adicionarIDDoItemNoCarrinho(nome)}>
             <GiShoppingCart/>
                 </button> 
                 </>

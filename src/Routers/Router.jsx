@@ -8,25 +8,23 @@ import CarrinhoDeCompras from "../Pages/CarrinhoDeCompras";
 function Routers() {
 
   return (
+          <UsuarioProvider>
     <BrowserRouter>
       <Routes>
 
         <Route path="/" element={<LogoFixed />} >
-          <Route index element={
-            <UsuarioProvider>
+            <Route index element={
               <MensagemProvider>
                 <Login />
-
               </MensagemProvider>
-            </UsuarioProvider>
-          }>
-
-          </Route>
-          <Route path="/cardapio" element={<Cardapio />} />
-          <Route path="/carrinho" element={<CarrinhoDeCompras />} />
+            }>
+            </Route>
+            <Route path="/cardapio" element={<Cardapio />} />
+            <Route path="/carrinho" element={<CarrinhoDeCompras />} />
         </Route>
       </Routes>
     </BrowserRouter>
+              </UsuarioProvider>
   )
 }
 
