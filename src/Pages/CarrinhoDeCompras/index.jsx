@@ -1,10 +1,14 @@
 import style from "./CarrinhoDeCompras.module.css";
 import img from "../../../public/imagem/1.png";
+import {IoMdArrowRoundBack} from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const CarrinhoDeCompras = () => {
     return (
         <section className={style.section}>
-            {/*botao de voltar  */}
+            <Link to="/cardapio">
+            <IoMdArrowRoundBack className={style.iconeVoltar}/>
+            </Link>
 
             <div className={style.item}>
 
