@@ -1,10 +1,26 @@
 import './App.css';
 
-function App() {
+export const App = ()=> {
   return (
     <>
 
     </>
   )
 }
-export default App;
+
+export const ChatRoom = () =>{
+
+}
+
+export const Login =()=>{
+  const [] = useSignInWithGoogle(auth)
+ return (
+  <button >
+
+  </button>
+ )
+}
+
+export const Sair = ()=>{
+
+}
