@@ -1,3 +1,7 @@
+.containerChatTodo{
+    position: relative;
+}
+
 .containerChat {
     display: flex;
     flex-direction: column;
@@ -6,11 +10,15 @@
 .mensagem {
     display: flex;
     align-items: center;
+    margin-bottom: 0.45em;
+    gap: .45em;
 }
 
 .enviado p {
     color: white;
-    background: #0b93f6;
+    background: #43ef7a;
+    padding: 1em;
+    border-radius: 1em;
     align-self: flex-end;
 }
 
@@ -25,4 +33,20 @@ img {
     height: 60px;
     border-radius: 50%;
     margin: 2px 5px;
+}
+.inputBtn{
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    width: 100%;
+}
+.inputBtn input{
+    width: 90%;
+    padding: 1em;
+    border: none;
+}
+.inputBtn button{
+    padding: 1em;
+    margin-left: 0.22em;
+    border: none;
 }

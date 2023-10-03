@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+.App {
+    background-color: #d2d2d2;
+    height: 100vh;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.App h1 {
+    color: white;
+    font-weight: 700;
+    padding: .45em 0;
+    font-size: 3em;
+    text-align: center;
+    background-color: rgb(127, 207, 84);
+    margin-bottom: 1em;
+}
+
+.botaoSair {
+    position: fixed;
+    right: 10%;
+    top: 1%;
+    font-size: 2em;
+    border: none;
+    padding: .45em;
+    border-radius: 15%;
+}

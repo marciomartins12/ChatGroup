@@ -10,7 +10,7 @@ export const SignIn = () => {
   
   export const SignOut = () => {
     return (
-      auth.currentUser && <button className="sign-out" onClick={() => auth.signOut()}>Sair</button>
+      auth.currentUser && <button className="botaoSair" onClick={() => auth.signOut()}>Sair</button>
     );
   };
   

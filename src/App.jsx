@@ -3,7 +3,8 @@ import ChatRoom from "./Components/ChatRoom";
 import { SignIn, SignOut } from "./Components/SairAndEntrar";
 import { getAuth } from "firebase/auth";
 import { app} from "./services/firebaseConfig";
-
+import "./reset.css";
+import "./App.css";
 
 const auth = getAuth(app);
 
@@ -13,9 +14,9 @@ const App = () => {
     <div className='App'>
       <header>
          <h1>Chatzin</h1>
-        <SignOut />
+        <SignOut className="botaoSair" />
       </header>
-      <section>{user ? <ChatRoom /> : <SignIn />}</section>
+      <section>{user ? <ChatRoom /> : <SignIn className="botaoEntrar" />}</section>
     </div>
   );
 };

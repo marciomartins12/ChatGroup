@@ -48,7 +48,7 @@ const ChatRoom = () => {
     
   
     return (
-      <>
+      <div className="containerChatTodo">
 
         <main className="containerChat">
           {messages &&
@@ -56,15 +56,16 @@ const ChatRoom = () => {
             <div ref={dummy}></div>
         </main>
 
-        <form onSubmit={sendMessage}>
+        <form className="inputBtn" onSubmit={sendMessage}>
           <input
             type="text"
             value={formValue}
+            placeholder="Digite sua mensagem..."
             onChange={(e) => setFormValue(e.target.value)}
           />
           <button type="submit"  disabled={!formValue}>Enviar</button>
         </form>
-      </>
+      </div>
     );
   };
   export default ChatRoom;
