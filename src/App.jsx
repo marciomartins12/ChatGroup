@@ -12,9 +12,9 @@ const App = () => {
   const [user] = useAuthState(auth);
   return (
     <div className='App'>
+        <SignOut/>
       <header>
          <h1>UatiChat</h1>
-        <SignOut/>
       </header>
       <section>{user ? <ChatRoom /> : <SignIn className="botaoEntrar" />}</section>
     </div>

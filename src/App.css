@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 .App {
-    background-color: #d2d2d2;
-    height: 100vh;
     position: relative;
     font-family: 'Open Sans', sans-serif;
 }
@@ -17,7 +15,7 @@
 }
 
 .botaoSair {
-    position: fixed;
+    position: absolute;
     right: 10%;
     top: 1%;
     font-size: 2em;
