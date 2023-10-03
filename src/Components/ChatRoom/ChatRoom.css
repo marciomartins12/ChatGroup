@@ -26,7 +26,12 @@
     flex-direction: row-reverse;
 }
 
-.recebendo {}
+.recebendo p {
+    background: #43d5ef;
+    padding: 1em;
+    border-radius: 1em;
+   
+}
 
 img {
     width: 60px;
@@ -41,6 +46,7 @@ img {
     width: 100%;
 }
 .inputBtn input{
+    border-radius: 0.45em;
     width: 90%;
     padding: 1em;
     border: none;
