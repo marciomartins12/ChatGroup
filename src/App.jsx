@@ -13,8 +13,8 @@ const App = () => {
   return (
     <div className='App'>
       <header>
-         <h1>Chatzin</h1>
-        <SignOut className="botaoSair" />
+         <h1>UatiChat</h1>
+        <SignOut/>
       </header>
       <section>{user ? <ChatRoom /> : <SignIn className="botaoEntrar" />}</section>
     </div>
