@@ -16,7 +16,7 @@ const App = () => {
       <header>
          <h1>UatiChat</h1>
       </header>
-      <section>{user ? <ChatRoom /> : <SignIn className="botaoEntrar" />}</section>
+      <section>{user ? <ChatRoom /> : <SignIn />}</section>
     </div>
   );
 };

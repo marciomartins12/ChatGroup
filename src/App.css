@@ -15,11 +15,24 @@
 }
 
 .botaoSair {
-    position: absolute;
+    position: absolute  ;
     right: 10%;
     top: 1%;
     font-size: 2em;
     border: none;
     padding: .45em;
     border-radius: 15%;
+}
+.botaoEntrar{
+    border: none;
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+    align-items: center;
+}
+.botaoEntrar button{
+    border: none;
+    border-radius: 1em;
+    font-size: 2em;
+    padding: 1em;
 }

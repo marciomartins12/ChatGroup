@@ -5,7 +5,9 @@ const auth = getAuth(app);
 export const SignIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   
-    return <button className="sign-in" onClick={() => signInWithGoogle()}>logar com Google</button>;
+    return <div  className="botaoEntrar" >
+     <button onClick={() => signInWithGoogle()}>logar com Google</button>
+    </div>
   };
   
   export const SignOut = () => {
