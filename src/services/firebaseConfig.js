@@ -3,14 +3,23 @@
 
 
  const firebaseConfig = {
-   apiKey: "AIzaSyCkJl1gCKJD9a1wxSfUtpwYxKNFxMARDlY",
-   authDomain: "chatgroup-c9c27.firebaseapp.com",
-   projectId: "chatgroup-c9c27",
-   storageBucket: "chatgroup-c9c27.appspot.com",
-   messagingSenderId: "927029161377",
-   appId: "1:927029161377:web:b51c8f89b8e8cf6698efe0",
-   measurementId: "G-TVBWZ0DL7E"
- };
+
+  apiKey: "AIzaSyBbn_wz8Qf-tjjG_Os_7eRGJZNgHq-WOmY",
+
+  authDomain: "chatestemaisumavez.firebaseapp.com",
+
+  projectId: "chatestemaisumavez",
+
+  storageBucket: "chatestemaisumavez.appspot.com",
+
+  messagingSenderId: "187402863824",
+
+  appId: "1:187402863824:web:682f43845eae2b46f7cad5",
+
+  measurementId: "G-6TY8M80TH3"
+
+};
+
   
 
  export const app = initializeApp(firebaseConfig);
