@@ -8,7 +8,7 @@ export const SignIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   
     return <div  className="botaoEntrar" >
-     <button onClick={() => signInWithGoogle()}>logar com Google</button>
+     <button onClick={() => signInWithGoogle()}>sign in using google</button>
     </div>
   };
   
