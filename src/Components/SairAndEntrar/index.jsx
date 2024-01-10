@@ -6,10 +6,10 @@ const auth = getAuth(app);
 
 export const SignIn = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-  
+  alert(" se não estiver funcionando, me mande mensagem @marciomartins12. o problema é no banco de dados e só precisa ficar trocando o servidor que ele volta funcioar normalmente.");
     return <div  className="botaoEntrar" >
      <button onClick={() => signInWithGoogle()}>sign in using google</button>
-     <p> se não estiver funcionando, me mande mensagem @marciomartins12. o problema é no banco de dados e só precisa ficar trocando o servidor que ele volta funcioar normalmente.</p>
+    
     </div>
   };
   
