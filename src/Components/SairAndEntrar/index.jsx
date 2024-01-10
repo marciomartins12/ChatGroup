@@ -17,4 +17,5 @@ export const SignIn = () => {
       auth.currentUser && <button className="botaoSair" onClick={() => auth.signOut()}>Sair</button>
     );
   };
+
   

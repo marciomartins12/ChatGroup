@@ -16,8 +16,8 @@
 
 .botaoSair {
     position: absolute  ;
-    right: 10%;
-    top: 1%;
+    right: 10px;
+    top: 10px;
     font-size: 2em;
     border: none;
     padding: .45em;

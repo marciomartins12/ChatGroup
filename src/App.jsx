@@ -14,7 +14,7 @@ const App = () => {
     <div className='App'>
         <SignOut/>
       <header>
-         <h1>UatiChat</h1>
+         <h1>Chat</h1>
       </header>
       <section>{user ? <ChatRoom /> : <SignIn />}</section>
     </div>
